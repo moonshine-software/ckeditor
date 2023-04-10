@@ -49,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CKEditorServiceProvider"
+                "MoonShine\\CKEditor\\Providers\\CKEditorServiceProvider"
             ]
         }
     }
