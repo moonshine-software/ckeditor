@@ -1,4 +1,14 @@
-# CKEditor field for [MoonShine Laravel admin panel](https://moonshine.cutcode.dev)
+# CKEditor field for [MoonShine Laravel admin panel](https://moonshine-laravel.com)
 
-## Documentation
-[Read CKEditor field in Official MoonShine Documentation](https://moonshine.cutcode.dev/section/fields-wysiwyg)
+## Installation
+```shell
+composer require moonshine/ckeditor
+```
+
+## Usage
+
+```php
+use MoonShine\CKEditor\Fields\CKEditor;
+
+CKEditor::make('Label')
+```

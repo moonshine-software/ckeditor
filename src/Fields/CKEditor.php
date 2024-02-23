@@ -8,7 +8,7 @@ use MoonShine\Fields\Textarea;
 
 final class CKEditor extends Textarea
 {
-    protected static string $view = 'moonshine-ckeditor::fields.ckeditor';
+    protected string $view = 'moonshine-ckeditor::fields.ckeditor';
 
     protected array $assets = [
         'vendor/moonshine-ckeditor/css/ckeditor.css',
