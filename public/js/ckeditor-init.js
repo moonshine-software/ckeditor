@@ -1,10 +1,7 @@
 document.addEventListener('alpine:init', () => {
     Alpine.data('ckeditor', (attachmentRoute) => ({
         init() {
-            const t = this
-
-            this.$nextTick(function() {
-                CKEDITOR.ClassicEditor.create(document.getElementById(t.$el.id), {
+            CKEDITOR.ClassicEditor.create(this.$el, {
                     // https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
                     toolbar: {
                         items: [
@@ -152,7 +149,6 @@ document.addEventListener('alpine:init', () => {
                         'MathType'
                     ]
                 });
-            })
         },
     }))
 })
