@@ -13,5 +13,6 @@ final class CKEditor extends Textarea
     protected array $assets = [
         'vendor/moonshine-ckeditor/css/ckeditor.css',
         'vendor/moonshine-ckeditor/js/ckeditor.js',
+        'vendor/moonshine-ckeditor/js/ckeditor-init.js',
     ];
 }
