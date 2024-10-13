@@ -1,5 +1,16 @@
 # CKEditor field for [MoonShine Laravel admin panel](https://moonshine-laravel.com)
 
+### Requirements
+
+- MoonShine v3.0+
+
+### Support MoonShine versions
+
+| MoonShine   | CKEditor |
+|-------------|----------|
+| 2.0+        | 1.0+     |
+| 3.0+        | 2.0+     |
+
 ## Installation
 ```shell
 composer require moonshine/ckeditor
@@ -11,4 +22,10 @@ composer require moonshine/ckeditor
 use MoonShine\CKEditor\Fields\CKEditor;
 
 CKEditor::make('Label')
+```
+
+## Attachments
+
+```php
+CKEditor::make('Label')->attachmentRoute(route('your-attachment-route'))
 ```
