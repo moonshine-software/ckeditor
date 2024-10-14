@@ -148,6 +148,11 @@ document.addEventListener('alpine:init', () => {
                         // from a local file system (file://) - load this site via HTTP server if you enable MathType
                         'MathType'
                     ]
+                })
+                .then(editor => {
+                    editor.model.document.on('change:data', (evt, data) => {
+                        this.$el.value = editor.getData()
+                    });
                 });
         },
     }))
