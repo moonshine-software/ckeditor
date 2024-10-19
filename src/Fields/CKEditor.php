@@ -12,7 +12,7 @@ final class CKEditor extends Textarea
 {
     protected string $view = 'moonshine-ckeditor::fields.ckeditor';
 
-    protected string $attachmentRoute = '';
+    protected string $attachmentEndpoint = '';
 
     public function getAssets(): array
     {
@@ -23,9 +23,9 @@ final class CKEditor extends Textarea
         ];
     }
 
-    public function attachmentRoute(string $route): self
+    public function attachmentEndpoint(string $value): self
     {
-        $this->attachmentRoute = $route;
+        $this->attachmentEndpoint = $value;
 
         return $this;
     }
@@ -33,7 +33,7 @@ final class CKEditor extends Textarea
     protected function viewData(): array
     {
         return [
-            'attachmentRoute' => $this->attachmentRoute
+            'attachmentEndpoint' => $this->attachmentEndpoint
         ];
     }
 }

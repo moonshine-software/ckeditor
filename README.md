@@ -28,5 +28,5 @@ CKEditor::make('Label')
 ## Attachments
 
 ```php
-CKEditor::make('Label')->attachmentRoute(route('your-attachment-route'))
+CKEditor::make('Label')->attachmentEndpoint(route('your-attachment-route'))
 ```
